@@ -26,10 +26,32 @@ android {
         tencent { dimension "default" }
         taobao { dimension "default" }
     }
-
     productFlavors.all { flavor ->
         flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
     }
+//    productFlavors {
+//        kuan {
+//            dimension "default"
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "kuan"]
+//        }
+//        xiaomi {
+//            dimension "default"
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+//        }
+//        qh360 {
+//            dimension "default"
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "qh360"]
+//        }
+//        baidu {
+//            dimension "default"
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+//        }
+//        wandoujia {
+//            dimension "default"
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+//        }
+//    }
+
 }
 
 dependencies {
